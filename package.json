@@ -1,0 +1,17 @@
+{
+  "name": "motoride",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev:api": "npm --workspace apps/api run start:dev",
+    "dev:mobile": "npm --workspace apps/mobile run start",
+    "dev:admin": "npm --workspace apps/admin run dev",
+    "build:api": "npm --workspace apps/api run build",
+    "build:admin": "npm --workspace apps/admin run build"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
+}
